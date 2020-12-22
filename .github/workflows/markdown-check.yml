@@ -8,7 +8,7 @@ jobs:
   register:
     runs-on: ubuntu-latest
     steps:
-    - uses: SvanBoxel/organization-workflow@master
+    - uses: SvanBoxel/organization-workflow@main
       with:
         id: ${{ github.event.client_payload.id }}
         callback_url: ${{ github.event.client_payload.callback_url }}

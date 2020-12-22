@@ -15,8 +15,7 @@ jobs:
         sha: ${{ github.event.client_payload.sha }}
         run_id: ${{ github.run_id }}
         name: ${{ env.name || github.workflow }}
-        enforce: true
-        documentation: "./github/workflows/markdown-check.md"
+        documentation: "github/workflows/markdown-check.md"
   main:
     needs: [register]
     runs-on: ubuntu-latest

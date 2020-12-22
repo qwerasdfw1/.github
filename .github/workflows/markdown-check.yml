@@ -28,3 +28,5 @@ jobs:
         token: ${{ github.event.client_payload.token }}
     - name: Markdown Lint
       uses: ruzickap/action-my-markdown-linter@v1
+      with:
+        config_file: "config/md-nlint.yml"
